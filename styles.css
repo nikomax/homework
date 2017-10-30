@@ -1,0 +1,278 @@
+@font-face{
+    font-family: 'HKGrotesk-Light';
+    src: url('fonts/HKGrotesk-Light.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'LeagueSpartan-Bold';
+    src: url('fonts/LeagueSpartan-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: HKGrotesk-Light;
+}
+
+body {
+    background: #272f45;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 0 60px;
+}
+
+.search {
+    position: relative;
+    width: 177px;
+}
+
+.search__icon {
+    position: absolute;
+    top: 7px;
+    left: 0;
+}
+
+.search__input {
+    width: 127px;
+    color: #92a1a9;
+    font-size: 24px;
+    padding: 5px 25px;
+    outline: none;
+    display: block;
+    background: transparent;
+    border: 0;
+    border-bottom: 3px solid #63757e;
+}
+
+.main__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__item {
+    margin-bottom: 40px;
+}
+
+.item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item--size--lg {
+    width: 1160px;
+    padding: 115px 0;
+}
+
+.item__container {
+    width: 365px;
+    margin-left: 69px;
+}
+
+.item__title {
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: LeagueSpartan-Bold;
+    margin: 0 0 50px 0;
+}
+
+.item__desc {
+    font-size: 32px;
+    margin-bottom: 135px;
+}
+
+.btn {
+    transition: 0.2s;
+    display: inline-block;
+    font-size: 24px;
+    border: 3px solid #eec9a2;
+    padding: 15px 24px;
+}
+
+.btn:hover {
+    background: #eec9a2;
+}
+
+.item--size--md {
+    width: 560px;
+    padding: 60px 0 225px;
+}
+
+.item--size--md .item__container {
+    width: 445px;
+}
+
+.item__container--pos--right {
+    text-align: right;
+    margin-left: 85px;
+}
+
+.item__container--pos--left {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.item--size--md .item__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.item--size--md .item__desc {
+    font-size: 24px;
+    margin-bottom: 60px;
+}
+
+.item--size--md .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 14px 36px;
+}
+
+.item--size--sm {
+    width: 360px;
+    padding: 70px 0 230px;
+}
+
+.item--pos--reverse {
+    padding: 250px 0 50px;
+}
+
+.item--size--sm .item__container {
+    text-align: center;
+    margin: 0 auto;
+    width: 290px;
+}
+
+.item--size--sm .item__title {
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.item--size--sm .item__desc {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.item--size--sm .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 14px 36px;
+}
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #92a1a9;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.subscribe__title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.subscribe__subtitle {
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.btn--size--lg {
+    width: 355px;
+    text-align: center;
+    font-size: 24px;
+    color: #7f919b;
+    border-color: #92a1a9;
+    margin-bottom: 20px;
+    padding: 18px 0;
+}
+
+.btn--size--lg:hover {
+    color: #ffffff;
+    background: #92a1a9;
+}
+
+.btn--subscribe {
+    text-transform: uppercase;
+    font-family: LeagueSpartan-Bold;
+    font-size: 18px;
+    color: #ffffff;
+    border-color: #82c9d8;
+}
+
+.footer {
+    color: #7f919b;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.fuuter__menu {
+    margin-bottom: 30px;
+}
+
+.menu__item {
+    display: inline-block;
+    margin-right: 17px;
+    font-size: 24px;
+}
+
+.menu__item:before {
+    content: "•";
+    margin-right: 17px;
+}
+
+.menu__item:first-child:before {
+    display: none;
+}
+
+.menu__link {
+    display: inline-block;
+    color: #92a1a9;
+    font-size: 24px;
+}
+
+.menu__link:hover {
+    transition: 0.2s;
+    color: #ffffff;
+}
+
+.menu__link:after {
+    transition: 0.3s;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background: #ffffff;
+    height: 2px;
+}
+
+.menu__link:hover:after {
+    width: 100%;
+}
+
+.copyright {
+    font-size: 18px;
+}
