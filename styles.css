@@ -1,11 +1,11 @@
-@font-face{
+@font-face {
     font-family: 'HKGrotesk-Light';
     src: url('fonts/HKGrotesk-Light.otf');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face{
+@font-face {
     font-family: 'LeagueSpartan-Bold';
     src: url('fonts/LeagueSpartan-Bold.otf');
     font-weight: normal;
@@ -13,7 +13,7 @@
 }
 
 * {
-    font-family: HKGrotesk-Light;
+    font-family: HKGrotesk-Light, Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -90,7 +90,7 @@ a {
 .item__title {
     font-size: 80px;
     text-transform: uppercase;
-    font-family: LeagueSpartan-Bold;
+    font-family: LeagueSpartan-Bold, Arial, Helvetica, sans-serif;
     margin: 0 0 50px 0;
 }
 
@@ -202,12 +202,14 @@ a {
 .btn--size--lg {
     width: 355px;
     text-align: center;
-    font-size: 24px;
-    color: #7f919b;
-    border-color: #92a1a9;
     margin-bottom: 20px;
     padding: 18px 0;
     background: transparent;
+    text-transform: uppercase;
+    font-family: LeagueSpartan-Bold, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    border-color: #82c9d8;
 }
 
 .email-input {
@@ -225,14 +227,6 @@ a {
 .btn--size--lg:hover {
     color: #ffffff;
     background: #92a1a9;
-}
-
-.btn--subscribe {
-    text-transform: uppercase;
-    font-family: LeagueSpartan-Bold;
-    font-size: 18px;
-    color: #ffffff;
-    border-color: #82c9d8;
 }
 
 .footer {
